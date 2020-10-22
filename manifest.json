@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Email Scanner",
+  "description": "This extension will find emails in a webpage",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+   },
+
+   "permissions": ["activeTab","tabs"],
+
+   "content_scripts":[
+     {"matches":["<all_urls>"],"js":["background.js"]}
+   ]
+
+}
